@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="minesweepercss.css" type="text/css">
+    <script src="minesweeper.js"></script>
+    <title>Minesweeper</title>
+</head>
+<body onload="addEventListeners(); init();">
+    <label>Set height</label>
+    <input id="height" type="number" max="40" min="10" value="10">
+    <label>Set width</label>
+    <input id="width" type="number" max="40" min="10" value="10">
+    <label>Set number of mines</label>
+    <input id="initialMines" type="number" max="99" min="1" value="10">
+    <br>
+    <button onclick="init()">Reset</button>
+    <p>Time: <span id="time">0</span></p>
+    <p>Mines left: <span id="minesLeft">0</span></p>
+    <table id='game'>
+    </table>
+    <p id="message"></p>
+    <footer></footer>
+    
+    
+</body>
+</html>
